@@ -7,7 +7,7 @@
         <title>Form</title>
     </head>
     <body>
-        <form action="Result.html" method="Get">
+        <form action="Result.html" method="Get" enctype="multipart/form-data">
             <div>
                 <label for="name">Name</label>
                 <input type=text name="name" id="name" placeholder="Username" Required>
@@ -21,13 +21,66 @@
                 <input type="number" name="age" id="age" min="10" max="50" step="1" Required>
             </div>
             <div> 
-                <label for="date">Birthday</label>
+                <label for="date">Birthdate</label>
                 <input type="date" name="date" id="date" min="31-12-2010" max="31-12-2024">
             </div>
-            <div>Favorite Food</div>
-            <div>
+           <div>
+                Favorite Food
+             <div>
                 <label for="Apple">Apple</label>
-                <input type="checkbox" name="apple" id="apple">
+                <input type="checkbox" name="favorite food" id="apple">
+             </div>
+             <div>
+                <label for="pia">Pia</label>
+                <input type="checkbox" name="favorite food" id="pia">
+             </div>
+             <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="favorite food" id="banana">
+             </div>
+            </div>
+            <div>
+                Gender
+             <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value=""male>
+             </div>
+             <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+             </div>
+            </div>
+            <div>
+                <label for="eyeColor">Eye Color</label>
+                <select name="eyeColor" id="eyeColor">
+                    <option value="Black">Black</option>
+                     <option label="Blue" value="Blue">Blue</option>
+                     <option value="Green">Green</option>
+                     <option value="Red">Red</option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div>
+                <input type="hidden" name="hidden" value="hy">
+            </div>
+            <div> 
+                <label for="file">File</label>
+                <input id="file" type="file" name="file">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
             </div>
             <div>
              <label>
@@ -38,7 +91,5 @@
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
-       
-
     </body>
 </html>
